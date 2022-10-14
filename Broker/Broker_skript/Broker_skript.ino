@@ -1,10 +1,18 @@
+
+
 #include <ESP8266WiFi.h>
 #include "uMQTTBroker.h"
+#include <DNSServer.h>
+#include <ESP8266WebServer.h>
 
-char ssid[] = "mqtt";     // your network SSID (name)
-char pass[] = "123qwe456rty"; // your network password
-bool WiFiAP = true;      // Do yo want the ESP as AP?
+char ssid[] = "MQTT_Broker_Esp8266";     // your network SSID (name)
+char pass[] = ""; // your network password
+//bool WiFiAP = true;      // Do yo want the ESP as AP?
 
+IPAddress apIP(192, 168, 1, 4);   
+DNSServer dnsServer;
+const char *server_name = "www.MQTT_Broker_Esp8266.local"; 
+const byte DNS_PORT = 53;
 /*
  * Custom broker class with overwritten callback functions
  */
@@ -73,8 +81,14 @@ void startWiFiAP()
 {
   WiFi.mode(WIFI_AP);
   WiFi.softAP(ssid, pass);
+  delay(100);
+  
+  WiFi.softAPConfig(apIP, apIP, IPAddress(255, 255, 255, 0));
+
+  dnsServer.start(DNS_PORT, server_name, apIP);
+
   Serial.println("AP started");
-  Serial.println("IP address: " + WiFi.softAPIP().toString());
+  Serial.println("Address: " + (String)server_name);
 }
 
 void setup()
@@ -84,19 +98,18 @@ void setup()
   Serial.println();
 
   // Start WiFi
-  if (WiFiAP)
+ // if (WiFiAP)
     startWiFiAP();
-  else
-    startWiFiClient();
+ // else
+  //  startWiFiClient();
 
   // Start the broker
   Serial.println("Starting MQTT broker");
   myBroker.init();
-
 /*
  * Subscribe to anything
  */
-  myBroker.subscribe("#");
+  myBroker.subscribe("broker/#");
 }
 
 int UpTime = 0;
@@ -106,11 +119,13 @@ void loop()
 /*
  * Publish the counter value as String
  */
-  myBroker.publish("broker/UpTime", (((String)UpTime+=5)+":seconds"));
+  dnsServer.processNextRequest();
+  Serial.println("===========================================================");
+  myBroker.publish("broker/UpTime", (String)(UpTime=UpTime + 1)+":seconds");
 
   myBroker.publish("broker/ClientCount", (String)myBroker.getClientCount());
 
   myBroker.printClients();
   // wait a second
-  delay(5000);
+  delay(1000);
 }
