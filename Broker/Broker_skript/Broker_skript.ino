@@ -4,6 +4,7 @@
 #include "uMQTTBroker.h"
 #include <DNSServer.h>
 #include <ESP8266WebServer.h>
+#include <string>
 
 char ssid[] = "MQTT_Broker_Esp8266";     // your network SSID (name)
 char pass[] = ""; // your network password
@@ -44,15 +45,18 @@ public:
 
     // Sample for the usage of the client info methods
 
-    virtual void printClients() {
+    virtual String printClients() {
+      String temp = "";
       for (int i = 0; i < getClientCount(); i++) {
         IPAddress addr;
         String client_id;
          
         getClientAddr(i, addr);
         getClientId(i, client_id);
-        Serial.println("Client "+client_id+" on addr: "+addr.toString());
+        temp += "{"+client_id+"}" ;
+        //Serial.println("Client "+client_id+" on addr: "+addr.toString());
       }
+      return temp;
     }
 };
 
@@ -96,7 +100,7 @@ void setup()
   Serial.begin(115200);
   Serial.println();
   Serial.println();
-
+   pinMode(16, OUTPUT);
   // Start WiFi
  // if (WiFiAP)
     startWiFiAP();
@@ -124,8 +128,11 @@ void loop()
   myBroker.publish("broker/UpTime", (String)(UpTime=UpTime + 1)+":seconds");
 
   myBroker.publish("broker/ClientCount", (String)myBroker.getClientCount());
-
-  myBroker.printClients();
+  myBroker.publish("broker/Clients", (String)myBroker.printClients());
+ // myBroker.printClients();
   // wait a second
-  delay(1000);
+  digitalWrite(16, HIGH);
+  delay(500);
+  digitalWrite(16, LOW);
+  delay(500);
 }

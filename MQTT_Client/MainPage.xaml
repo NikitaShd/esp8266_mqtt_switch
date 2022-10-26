@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MQTT_Client.MainPage"
+             
+             >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+     
+        </Grid.ColumnDefinitions>
+
+        <ScrollView >
+
+            <FlexLayout x:Name="FlexContainer" Direction="Row" Wrap="Wrap" JustifyContent="Center" AlignItems="Start" AlignContent="Start" >
+
+
+
+
+            </FlexLayout>
+
+        </ScrollView>
+        <Button Grid.Row="1" Text="Conect" x:Name="ConectButton" Clicked="Button_Clicked" Margin="10"></Button>
+    </Grid>
+
+   
+    
+</ContentPage>
