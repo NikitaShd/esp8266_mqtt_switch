@@ -50,11 +50,13 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\electric_ray.svg" />
+	  <None Remove="Resources\Images\high_wifi_wireless_data_storage_svgrepo_com.svg" />
+	  <None Remove="Resources\Images\locatots.svg" />
 	  <None Remove="Resources\Images\method_draw_image.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="MQTTnet" Version="4.1.2.350" />
+	  <PackageReference Include="M2MqttDotnetCore" Version="1.1.0" />
 	  <PackageReference Include="MQTTnet.Extensions.ManagedClient" Version="4.1.2.350" />
 	</ItemGroup>
 

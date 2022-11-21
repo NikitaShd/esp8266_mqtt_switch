@@ -1,1 +1,1 @@
-C:\Users\tvizet\Documents\Algorithms\MQTT_Client\MQTT_Client.csproj;x64
+C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\MQTT_Client.csproj;x64

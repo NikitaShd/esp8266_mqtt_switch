@@ -14,7 +14,7 @@ char pass[] = ""; // your network password
 IPAddress apIP(192, 168, 1, 4);  
 WiFiServer server(80);
 DNSServer dnsServer;
-const char *server_name = "www.MQTT_Broker_Esp8266.local"; 
+const char *server_name = "mqtt.MQTTBrokerEsp8266"; 
 const byte DNS_PORT = 53;
 
 int UpTime = 0;

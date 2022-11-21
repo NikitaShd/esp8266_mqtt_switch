@@ -8,6 +8,10 @@ using MQTTnet.Exceptions;
 using MQTTnet.Extensions.ManagedClient;
 using MQTTnet.Server;
 using System.Net.NetworkInformation;
+using uPLibrary.Networking.M2Mqtt;
+using System.Net;
+using uPLibrary.Networking.M2Mqtt.Messages;
+
 
 namespace MQTT_Client;
 
@@ -15,25 +19,39 @@ public partial class MainPage : ContentPage
 {
     public class DevRelai
     {
+        IDispatcher Dispatcher;
         public string naim
         {
-            get { return lbl.Text; }
-            set { lbl.Text = value; }
+            get { return "Dev/Relay/" + lbl2.Text; }
+            set { lbl2.Text = value.Remove(0,10); }
         }
         public bool stait
         {
             get { return sv.IsToggled; }
-            set { sv.IsToggled = value; }
+            set {
+                Dispatcher.Dispatch(() =>
+                { sv.IsToggled = value; });
+            }
         }
-
+        public string label
+        {
+            get { return lbl.Text; }
+            set {
+                Dispatcher.Dispatch(() =>
+                { lbl.Text = value; }); 
+            }
+        }
         private Frame core;
 
         private Switch sv;
         private Label lbl;
         private Label lbl2;
         private Image img;
-        public DevRelai(string temp)
+        uPLibrary.Networking.M2Mqtt.MqttClient client;
+        public DevRelai(string temp, uPLibrary.Networking.M2Mqtt.MqttClient clientinf,IDispatcher DispatcherS)
         {
+            Dispatcher = DispatcherS;
+            client = clientinf;
             core = new Frame();
             core.Margin = 5;
             core.Padding = 10;
@@ -47,7 +65,7 @@ public partial class MainPage : ContentPage
             lbl2 = new Label();
             img = new Image();
             naim = temp;
-            lbl2.Text = "00:1B:44:11:3A:B7";
+            //lbl2.Text = "00:1B:44:11:3A:B7";
 
             lbl.ZIndex = 1;
             lbl.HorizontalOptions = LayoutOptions.Center;
@@ -56,12 +74,13 @@ public partial class MainPage : ContentPage
 
             lbl2.ZIndex = 1;
             lbl2.HorizontalOptions = LayoutOptions.Center;
-            lbl2.FontSize = 10;
+            lbl2.FontSize = 9;
             AbsoluteLayout.SetLayoutBounds(lbl2, new Rect(1, 4, 100, 59));
             AbsoluteLayout.SetLayoutFlags(lbl2,Microsoft.Maui.Layouts.AbsoluteLayoutFlags.PositionProportional);
 
             sv.ZIndex = 1;
             sv.HorizontalOptions = LayoutOptions.Center;
+            sv.Toggled += Changered;
             AbsoluteLayout.SetLayoutBounds(sv, new Rect(4, 2, 100, 52));
             AbsoluteLayout.SetLayoutFlags(sv, Microsoft.Maui.Layouts.AbsoluteLayoutFlags.PositionProportional);
 
@@ -76,6 +95,19 @@ public partial class MainPage : ContentPage
             st.Add(lbl2);
             st.Add(sv);
             st.Add(img);
+
+        }
+        private void Changered(object sender, EventArgs e)
+        {
+            if (stait)
+            {
+                client.Publish(naim, System.Text.Encoding.UTF8.GetBytes(label + "|0"));
+            }
+            else
+            {
+                client.Publish(naim, System.Text.Encoding.UTF8.GetBytes(label +"|1"));
+            }
+            
         }
         public IView Get_IView() {
             return core;
@@ -93,6 +125,7 @@ public partial class MainPage : ContentPage
                 IPInterfaceProperties properties = adapter.GetIPProperties();
                 sMacAddress = adapter.GetPhysicalAddress().ToString();
             }
+            
         }
         return sMacAddress;
     }
@@ -100,71 +133,115 @@ public partial class MainPage : ContentPage
     List<DevRelai> Conect_Devs = new List<DevRelai> { };
 
     static string clientid = "Client/" + GetMACAddress();
-    const string server = "www.MQTT_Broker_Esp8266.local";
+    const string server = "mqtt.MQTTBrokerEsp8266";
     const int port = 1883;
 
-    IManagedMqttClient _mqttClient = new MqttFactory().CreateManagedMqttClient();
-
-    // Create client options object
-   static MqttClientOptionsBuilder builder = new MqttClientOptionsBuilder()
-                                            .WithClientId(clientid)
-                                            .WithTcpServer(server,port);
-
-    ManagedMqttClientOptions options = new ManagedMqttClientOptionsBuilder()
-                            .WithAutoReconnectDelay(TimeSpan.FromSeconds(60))
-                            .WithClientOptions(builder.Build())
-                            .Build();
-
-
-
-   
-
-   
+    uPLibrary.Networking.M2Mqtt.MqttClient client = new uPLibrary.Networking.M2Mqtt.MqttClient(server);
 
 
 
 
-    public MainPage()
+     public MainPage()
 	{
 		InitializeComponent();
-        _mqttClient.ConnectedAsync += _mqttClient_ConnectedAsync;
-        _mqttClient.ConnectingFailedAsync += _mqttClient_ConnectingFailedAsync;
-        _mqttClient.DisconnectedAsync += _mqttClient_DisconnectedAsync;
+        client.MqttMsgPublishReceived += client_MqttMsgPublishReceived;
+
+        string clientId = Guid.NewGuid().ToString();
+        
+            client.Connect(clientId);
+       
+       
+        // subscribe to the topic "/home/temperature" with QoS 2 
+        client.Subscribe(new string[] { "broker/Clients" }, new byte[] { MqttMsgBase.QOS_LEVEL_AT_MOST_ONCE });
+
 
         Application.Current.UserAppTheme = AppTheme.Light;
-        for (int i = 0; i < 10; i++)
-        {
-            DevRelai temp = new DevRelai(i.ToString());
-            Conect_Devs.Add(temp);
-            FlexContainer.Children.Add(Conect_Devs[i].Get_IView());
-            // FlexContainer.Children.Add(temp.core);
-        }
 
-       
+
         
+
+
     }
     int f = 0;
-    private async void Button_Clicked(object sender, EventArgs e)
+     async void client_MqttMsgPublishReceived(object sender, MqttMsgPublishEventArgs e)
     {
-        ConectButton.IsEnabled = false;
-        await _mqttClient.StartAsync(options);
-       
+        Console.WriteLine("reply topic  :" + e.Topic);
+        Console.WriteLine("reply payload:" + e.Message.ToString());
+        if (e.Topic == "broker/Clients")
+        {
+            string devs = System.Text.Encoding.UTF8.GetString(e.Message); 
+            string[] subs = devs.Split("}{");
+         
+            for (int i = 0; i < subs.Length; i++)
+            {
+                subs[i] = subs[i].Trim('{').Trim('}');
+                string dev = subs[i].Substring(0, 4);
+                if (dev == "Dev/")
+                {
+                    
+                    DevRelai temp = new DevRelai(subs[i],client, Dispatcher);
+                    bool iset = true;
+                    foreach (DevRelai item in Conect_Devs)
+                    {
+                        if (item.naim == subs[i]) iset = false;
+                    }
+                    if (iset)
+                    {
+                        Conect_Devs.Add(temp);
+                        client.Subscribe(new string[] { subs[i] }, new byte[] { MqttMsgBase.QOS_LEVEL_AT_MOST_ONCE });
+                        client.Publish(subs[i], System.Text.Encoding.UTF8.GetBytes("Get"));
+                        Dispatcher.Dispatch(() =>
+                        {
+                            FlexContainer.Children.Add(Conect_Devs[Conect_Devs.Count-1].Get_IView());
+
+                        });
+                    }
+                   
+                    // FlexContainer.Children.Add(temp.core);
+                }
+            }
+        }
+        else
+        {
+            if (e.Topic.Contains("Relay") && (System.Text.Encoding.UTF8.GetString(e.Message) != "Get"))
+            {
+                for (int i = 0; i < Conect_Devs.Count; ++i)
+                {
+                    if (e.Topic == Conect_Devs[i].naim)
+                    {
+                        string message = System.Text.Encoding.UTF8.GetString(e.Message);
+                        string[] temp = message.Split("|");
+                     
+                           
+                            Conect_Devs[i].label = temp[0];
+                            Conect_Devs[i].stait = (temp[1] == "0");
+                  
+                    }
+                }
+            }
+        }
         
     }
 
-     Task _mqttClient_ConnectedAsync(MqttClientConnectedEventArgs arg)
+    Task _mqttClient_ConnectedAsync(MqttClientConnectedEventArgs arg)
     {
        
+        Dispatcher.Dispatch(() =>
+        {
+           
+            statuslab.Text = "Conected";
+        });
+
         return Task.CompletedTask;
     }
 
     Task _mqttClient_ConnectingFailedAsync(ConnectingFailedEventArgs arg)
     {
-       
+     
         Dispatcher.Dispatch(() =>
         {
-            ConectButton.IsEnabled = true;
-           
+            
+            statuslab.Text = "disconect";
         });
       
         return Task.CompletedTask;
@@ -172,13 +249,26 @@ public partial class MainPage : ContentPage
 
     Task _mqttClient_DisconnectedAsync(MqttClientDisconnectedEventArgs arg)
     {
+        
         Dispatcher.Dispatch(() =>
         {
-            ConectButton.IsEnabled = true;
-          
+            
+            statuslab.Text = "disconect";
         });
 
         return Task.CompletedTask;
     }
+
+    private async void ContentPage_Loaded(object sender, EventArgs e)
+    {
+     
+    }
+
+    private void Frame_Focused(object sender, FocusEventArgs e)
+    {
+        statuslab.Text = "disconect";
+    }
+
+    
 }
 

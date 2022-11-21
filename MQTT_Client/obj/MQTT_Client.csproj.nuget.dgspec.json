@@ -61,9 +61,9 @@
         "net6.0-android31.0": {
           "targetAlias": "net6.0-android",
           "dependencies": {
-            "MQTTnet": {
+            "M2MqttDotnetCore": {
               "target": "Package",
-              "version": "[4.1.2.350, )"
+              "version": "[1.1.0, )"
             },
             "MQTTnet.Extensions.ManagedClient": {
               "target": "Package",
@@ -127,9 +127,9 @@
         "net6.0-ios15.4": {
           "targetAlias": "net6.0-ios",
           "dependencies": {
-            "MQTTnet": {
+            "M2MqttDotnetCore": {
               "target": "Package",
-              "version": "[4.1.2.350, )"
+              "version": "[1.1.0, )"
             },
             "MQTTnet.Extensions.ManagedClient": {
               "target": "Package",
@@ -184,9 +184,9 @@
         "net6.0-maccatalyst15.4": {
           "targetAlias": "net6.0-maccatalyst",
           "dependencies": {
-            "MQTTnet": {
+            "M2MqttDotnetCore": {
               "target": "Package",
-              "version": "[4.1.2.350, )"
+              "version": "[1.1.0, )"
             },
             "MQTTnet.Extensions.ManagedClient": {
               "target": "Package",
@@ -242,9 +242,9 @@
         "net6.0-windows10.0.19041": {
           "targetAlias": "net6.0-windows10.0.19041.0",
           "dependencies": {
-            "MQTTnet": {
+            "M2MqttDotnetCore": {
               "target": "Package",
-              "version": "[4.1.2.350, )"
+              "version": "[1.1.0, )"
             },
             "MQTTnet.Extensions.ManagedClient": {
               "target": "Package",

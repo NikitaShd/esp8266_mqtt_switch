@@ -2,8 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MQTT_Client.MainPage"
-             
-             >
+             Loaded="ContentPage_Loaded">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
@@ -23,8 +22,28 @@
 
             </FlexLayout>
 
-        </ScrollView>
-        <Button Grid.Row="1" Text="Conect" x:Name="ConectButton" Clicked="Button_Clicked" Margin="10"></Button>
+        </ScrollView >
+
+
+        <ContentView Grid.Row="1" Margin="6" >
+            <FlexLayout JustifyContent="SpaceEvenly" Wrap="NoWrap" AlignItems="Center" MinimumHeightRequest="60" MaximumHeightRequest="60">
+                <Label   x:Name="statuslab" Text="" />
+
+                <Frame CornerRadius="10" Padding="4" BackgroundColor="#10ffffff" >
+                    <AbsoluteLayout HeightRequest="50" WidthRequest="50" Padding="0" Margin="0">
+                        <Image Source="locatots.png" HeightRequest="50" WidthRequest="50" />
+
+                        <Button HeightRequest="50" WidthRequest="50" BackgroundColor="#10ffffff" />
+                    </AbsoluteLayout>
+                </Frame>
+
+
+            </FlexLayout>
+        </ContentView>
+       
+           
+       
+       
     </Grid>
 
    

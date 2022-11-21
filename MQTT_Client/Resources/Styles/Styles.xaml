@@ -127,6 +127,8 @@
         <Setter Property="HasShadow" Value="True" />
         <Setter Property="BackgroundColor" Value="{StaticResource FraimBackgraund}" />
         <Setter Property="CornerRadius" Value="20" />
+        <Setter Property="Opacity" Value="1" />
+      
     </Style>
 
     <Style TargetType="ImageButton">

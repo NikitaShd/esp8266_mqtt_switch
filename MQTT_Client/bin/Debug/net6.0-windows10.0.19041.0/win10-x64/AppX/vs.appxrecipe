@@ -10,14 +10,14 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>60A02D2A-A046-45B7-8E9A-7CC79349B208</PackageIdentityName>
     <PackageIdentityPublisher>CN=User Name</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>false</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\tvizet\Documents\Algorithms\MQTT_Client\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
+    <LayoutDir>C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
     <RegisteredManifestChecksum>3898BB8CC12C25F2BBA00EEBE3C8D3ABD59E7570C2D7D6D05B84036F7CD28F56</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>60A02D2A-A046-45B7-8E9A-7CC79349B208_1.0.0.1_x64__9zz4h110yvjzm</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>60A02D2A-A046-45B7-8E9A-7CC79349B208_9zz4h110yvjzm!App</RegisteredUserModeAppID>
@@ -26,28 +26,28 @@
     <RegisteredVersion>1.0.0.1</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-10-26T18:22:43.256</Modified>
+      <Modified>2022-11-16T11:27:21.247</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-10-26T18:15:57.542</Modified>
+      <Modified>2022-11-16T11:27:19.668</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\MQTT_Client.runtimeconfig.json">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\MQTT_Client.runtimeconfig.json">
       <PackagePath>MQTT_Client.runtimeconfig.json</PackagePath>
-      <Modified>2022-10-26T11:41:59.989</Modified>
+      <Modified>2022-11-09T10:31:06.113</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\MQTT_Client.dll">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\MQTT_Client.dll">
       <PackagePath>MQTT_Client.dll</PackagePath>
-      <Modified>2022-10-26T18:22:37.413</Modified>
+      <Modified>2022-11-16T11:27:16.785</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MQTT_Client.exe</PackagePath>
-      <Modified>2022-10-26T18:22:37.595</Modified>
+      <Modified>2022-11-16T11:27:16.815</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tvizet\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.8\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -965,6 +965,10 @@
       <PackagePath>WinRT.Runtime.dll</PackagePath>
       <Modified>2022-06-14T01:02:02.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tvizet\.nuget\packages\m2mqttdotnetcore\1.1.0\lib\netcoreapp3.1\M2Mqtt.dll">
+      <PackagePath>M2Mqtt.dll</PackagePath>
+      <Modified>2020-03-27T08:07:50.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tvizet\.nuget\packages\microsoft.extensions.configuration\6.0.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll">
       <PackagePath>Microsoft.Extensions.Configuration.dll</PackagePath>
       <Modified>2022-02-24T00:12:18.000</Modified>
@@ -1069,9 +1073,9 @@
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
       <Modified>2022-07-19T16:53:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\MQTT_Client.deps.json">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\MQTT_Client.deps.json">
       <PackagePath>MQTT_Client.deps.json</PackagePath>
-      <Modified>2022-10-26T18:22:42.169</Modified>
+      <Modified>2022-11-16T11:27:20.836</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\6.0.486\ref\net6.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
@@ -1085,221 +1089,261 @@
       <PackagePath>Microsoft.Maui.pri</PackagePath>
       <Modified>2022-07-24T23:14:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\Resources\Raw\AboutAssets.txt">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
       <Modified>2022-10-21T13:14:54.752</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
       <Modified>2022-10-21T13:17:08.782</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
       <Modified>2022-10-21T13:17:08.837</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
       <Modified>2022-10-21T13:17:08.914</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
       <Modified>2022-10-21T13:17:09.054</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
       <Modified>2022-10-21T13:17:09.464</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
       <Modified>2022-10-21T13:14:54.705</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
       <Modified>2022-10-21T13:14:54.705</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2022-10-24T18:50:22.202</Modified>
+      <Modified>2022-11-01T20:07:28.995</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2022-10-24T18:50:22.763</Modified>
+      <Modified>2022-11-01T20:07:29.557</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2022-10-24T18:50:22.799</Modified>
+      <Modified>2022-11-01T20:07:29.588</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2022-10-24T18:50:22.836</Modified>
+      <Modified>2022-11-01T20:07:29.620</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2022-10-24T18:50:22.893</Modified>
+      <Modified>2022-11-01T20:07:29.666</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2022-10-24T18:50:23.110</Modified>
+      <Modified>2022-11-01T20:07:29.872</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2022-10-24T18:50:22.225</Modified>
+      <Modified>2022-11-01T20:07:29.041</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2022-10-24T18:50:22.234</Modified>
+      <Modified>2022-11-01T20:07:29.041</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2022-10-24T18:50:22.244</Modified>
+      <Modified>2022-11-01T20:07:29.057</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2022-10-24T18:50:22.255</Modified>
+      <Modified>2022-11-01T20:07:29.057</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2022-10-24T18:50:22.268</Modified>
+      <Modified>2022-11-01T20:07:29.073</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2022-10-24T18:50:22.421</Modified>
+      <Modified>2022-11-01T20:07:29.229</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2022-10-24T18:50:22.435</Modified>
+      <Modified>2022-11-01T20:07:29.245</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2022-10-24T18:50:22.453</Modified>
+      <Modified>2022-11-01T20:07:29.260</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2022-10-24T18:50:22.477</Modified>
+      <Modified>2022-11-01T20:07:29.292</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2022-10-24T18:50:22.532</Modified>
+      <Modified>2022-11-01T20:07:29.338</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2022-10-24T18:50:22.336</Modified>
+      <Modified>2022-11-01T20:07:29.135</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2022-10-24T18:50:22.348</Modified>
+      <Modified>2022-11-01T20:07:29.135</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2022-10-24T18:50:22.365</Modified>
+      <Modified>2022-11-01T20:07:29.151</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2022-10-24T18:50:22.378</Modified>
+      <Modified>2022-11-01T20:07:29.166</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2022-10-24T18:50:22.407</Modified>
+      <Modified>2022-11-01T20:07:29.198</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2022-10-24T18:50:22.277</Modified>
+      <Modified>2022-11-01T20:07:29.088</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2022-10-24T18:50:22.289</Modified>
+      <Modified>2022-11-01T20:07:29.088</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2022-10-24T18:50:22.298</Modified>
+      <Modified>2022-11-01T20:07:29.104</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2022-10-24T18:50:22.309</Modified>
+      <Modified>2022-11-01T20:07:29.104</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2022-10-24T18:50:22.327</Modified>
+      <Modified>2022-11-01T20:07:29.120</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2022-10-24T18:50:22.549</Modified>
+      <Modified>2022-11-01T20:07:29.354</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2022-10-24T18:50:22.569</Modified>
+      <Modified>2022-11-01T20:07:29.385</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2022-10-24T18:50:22.594</Modified>
+      <Modified>2022-11-01T20:07:29.401</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2022-10-24T18:50:22.633</Modified>
+      <Modified>2022-11-01T20:07:29.432</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2022-10-24T18:50:22.738</Modified>
+      <Modified>2022-11-01T20:07:29.526</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2022-10-24T18:48:02.272</Modified>
+      <Modified>2022-11-01T20:07:27.276</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2022-10-24T18:48:02.298</Modified>
+      <Modified>2022-11-01T20:07:27.291</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2022-10-24T18:48:02.338</Modified>
+      <Modified>2022-11-01T20:07:27.323</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2022-10-24T18:48:02.386</Modified>
+      <Modified>2022-11-01T20:07:27.354</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2022-10-24T18:48:02.520</Modified>
+      <Modified>2022-11-01T20:07:27.463</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\electric_ray.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\electric_ray.scale-100.png">
       <PackagePath>electric_ray.scale-100.png</PackagePath>
-      <Modified>2022-10-24T18:48:02.674</Modified>
+      <Modified>2022-11-01T20:07:27.573</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\electric_ray.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\electric_ray.scale-125.png">
       <PackagePath>electric_ray.scale-125.png</PackagePath>
-      <Modified>2022-10-24T18:48:02.764</Modified>
+      <Modified>2022-11-01T20:07:27.682</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\electric_ray.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\electric_ray.scale-150.png">
       <PackagePath>electric_ray.scale-150.png</PackagePath>
-      <Modified>2022-10-24T18:48:02.918</Modified>
+      <Modified>2022-11-01T20:07:27.807</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\electric_ray.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\electric_ray.scale-200.png">
       <PackagePath>electric_ray.scale-200.png</PackagePath>
-      <Modified>2022-10-24T18:48:03.143</Modified>
+      <Modified>2022-11-01T20:07:28.010</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\electric_ray.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\electric_ray.scale-400.png">
       <PackagePath>electric_ray.scale-400.png</PackagePath>
-      <Modified>2022-10-24T18:48:04.074</Modified>
+      <Modified>2022-11-01T20:07:28.885</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\method_draw_image.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\high_wifi_wireless_data_storage_svgrepo_com.scale-100.png">
+      <PackagePath>high_wifi_wireless_data_storage_svgrepo_com.scale-100.png</PackagePath>
+      <Modified>2022-11-01T20:07:28.932</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\high_wifi_wireless_data_storage_svgrepo_com.scale-125.png">
+      <PackagePath>high_wifi_wireless_data_storage_svgrepo_com.scale-125.png</PackagePath>
+      <Modified>2022-11-01T20:07:28.932</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\high_wifi_wireless_data_storage_svgrepo_com.scale-150.png">
+      <PackagePath>high_wifi_wireless_data_storage_svgrepo_com.scale-150.png</PackagePath>
+      <Modified>2022-11-01T20:07:28.932</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\high_wifi_wireless_data_storage_svgrepo_com.scale-200.png">
+      <PackagePath>high_wifi_wireless_data_storage_svgrepo_com.scale-200.png</PackagePath>
+      <Modified>2022-11-01T20:07:28.932</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\high_wifi_wireless_data_storage_svgrepo_com.scale-400.png">
+      <PackagePath>high_wifi_wireless_data_storage_svgrepo_com.scale-400.png</PackagePath>
+      <Modified>2022-11-01T20:07:28.948</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\locatots.scale-100.png">
+      <PackagePath>locatots.scale-100.png</PackagePath>
+      <Modified>2022-11-01T20:07:27.291</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\locatots.scale-125.png">
+      <PackagePath>locatots.scale-125.png</PackagePath>
+      <Modified>2022-11-01T20:07:27.338</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\locatots.scale-150.png">
+      <PackagePath>locatots.scale-150.png</PackagePath>
+      <Modified>2022-11-01T20:07:27.401</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\locatots.scale-200.png">
+      <PackagePath>locatots.scale-200.png</PackagePath>
+      <Modified>2022-11-01T20:07:27.510</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\locatots.scale-400.png">
+      <PackagePath>locatots.scale-400.png</PackagePath>
+      <Modified>2022-11-01T20:07:27.963</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\method_draw_image.scale-100.png">
       <PackagePath>method_draw_image.scale-100.png</PackagePath>
-      <Modified>2022-10-24T18:50:22.165</Modified>
+      <Modified>2022-11-01T20:07:28.010</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\method_draw_image.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\method_draw_image.scale-125.png">
       <PackagePath>method_draw_image.scale-125.png</PackagePath>
-      <Modified>2022-10-24T18:50:22.240</Modified>
+      <Modified>2022-11-01T20:07:28.073</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\method_draw_image.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\method_draw_image.scale-150.png">
       <PackagePath>method_draw_image.scale-150.png</PackagePath>
-      <Modified>2022-10-24T18:50:22.339</Modified>
+      <Modified>2022-11-01T20:07:28.166</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\method_draw_image.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\method_draw_image.scale-200.png">
       <PackagePath>method_draw_image.scale-200.png</PackagePath>
-      <Modified>2022-10-24T18:50:22.503</Modified>
+      <Modified>2022-11-01T20:07:28.307</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvizet\Documents\Algorithms\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\method_draw_image.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\tvizet\Documents\esp8266_mqtt_switch\MQTT_Client\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\method_draw_image.scale-400.png">
       <PackagePath>method_draw_image.scale-400.png</PackagePath>
-      <Modified>2022-10-24T18:50:23.086</Modified>
+      <Modified>2022-11-01T20:07:28.885</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
